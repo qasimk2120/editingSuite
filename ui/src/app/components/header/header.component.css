@@ -1,0 +1,52 @@
+mat-toolbar {
+  display: flex;
+  align-items: center;
+  background-color: #121212 ; /* Dark header background */
+  padding: 0 16px;
+  border-bottom: #292929 1px solid; /* Dark border at the bottom */
+  
+}
+
+mat-toolbar .left-aligned {
+  display: flex;
+  align-items: center;
+  flex-grow: 1; /* Take up available space */
+  justify-content: flex-start; /* Align items to the left */
+}
+
+.left-aligned a {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Add spacing between items */
+  text-decoration: none; /* Remove underline from links */
+  color: #E0E0E0; /* White text color */
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.left-aligned a:hover {
+  color: #00A3E0; /* Neon Blue for hover effect */
+}
+
+.left-aligned a:active {
+  color: #FF3C3C; /* Cyber Red for active state */
+  transform: scale(0.95); /* Slight shrink effect */
+}
+
+mat-icon {
+  margin-right: 8px;
+  color: #E0E0E0; /* Default white color */
+  transition: color 0.3s ease;
+}
+
+.header-link mat-icon {
+  color: inherit; /* Ensures icon color changes with the text */
+}
+
+.header-link:hover mat-icon {
+  color: #00A3E0; /* Neon Blue for hover effect */
+}
+
+.header-link:active mat-icon {
+  color: #FF3C3C; /* Cyber Red for active state */
+}
