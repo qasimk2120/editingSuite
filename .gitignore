@@ -12,3 +12,6 @@
 .vscode/
 idea/
 .env
+
+
+**/*angular/cache
