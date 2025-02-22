@@ -1,52 +1,51 @@
 mat-toolbar {
   display: flex;
   align-items: center;
-  background-color: #121212 ; /* Dark header background */
+  background-color: #121212; 
   padding: 0 16px;
-  border-bottom: #292929 1px solid; /* Dark border at the bottom */
-  
+  border-bottom: #292929 1px solid; 
 }
 
-mat-toolbar .left-aligned {
+mat-toolbar .center-aligned {
   display: flex;
   align-items: center;
-  flex-grow: 1; /* Take up available space */
-  justify-content: flex-start; /* Align items to the left */
+  justify-content: center; 
+  width: 100%; 
 }
 
-.left-aligned a {
+.center-aligned a {
   display: flex;
   align-items: center;
-  margin-right: 20px; /* Add spacing between items */
-  text-decoration: none; /* Remove underline from links */
-  color: #E0E0E0; /* White text color */
+  margin-right: 40px; 
+  text-decoration: none; 
+  color: #E0E0E0;
   font-size: 18px;
   transition: color 0.3s ease;
 }
 
-.left-aligned a:hover {
-  color: #00A3E0; /* Neon Blue for hover effect */
+.center-aligned a:hover {
+  color: #00A3E0;
 }
 
-.left-aligned a:active {
-  color: #FF3C3C; /* Cyber Red for active state */
-  transform: scale(0.95); /* Slight shrink effect */
+.center-aligned a:active {
+  color: #FF3C3C; 
+  transform: scale(0.95); 
 }
 
 mat-icon {
   margin-right: 8px;
-  color: #E0E0E0; /* Default white color */
+  color: #E0E0E0; 
   transition: color 0.3s ease;
 }
 
 .header-link mat-icon {
-  color: inherit; /* Ensures icon color changes with the text */
+  color: inherit; 
 }
 
 .header-link:hover mat-icon {
-  color: #00A3E0; /* Neon Blue for hover effect */
+  color: #00A3E0; 
 }
 
 .header-link:active mat-icon {
-  color: #FF3C3C; /* Cyber Red for active state */
+  color: #FF3C3C; 
 }
