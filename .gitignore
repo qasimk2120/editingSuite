@@ -1,0 +1,14 @@
+
+/build/
+*.log
+*.tmp
+
+**/node_modules/
+**/*.backup
+
+# Build output
+**/dist/
+**/build/
+.vscode/
+idea/
+.env
