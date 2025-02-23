@@ -1,11 +1,16 @@
 <mat-toolbar color="primary">
-  <div class="center-aligned">
-    <a href="#" class="header-link">
-      <mat-icon>home</mat-icon>
-      {{title()}}
-    </a>
-    <a href="#" class="header-link">About Us</a>
-    <a href="#" class="header-link">PDF Editing Tools</a>
-    <a href="#" class="header-link">Photo Editing Tools</a>
+  <div class="menu-container">
+    <button class="menu-toggle" (click)="toggleMenu()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <div class="center-aligned" [class.show]="menuOpen">
+      <a href="#" class="header-link">
+        <mat-icon>home</mat-icon>
+        {{title()}}
+      </a>
+      <a href="#" class="header-link">About Us</a>
+      <a href="#" class="header-link">PDF Editing Tools</a>
+      <a href="#" class="header-link">Photo Editing Tools</a>
+    </div>
   </div>
 </mat-toolbar>

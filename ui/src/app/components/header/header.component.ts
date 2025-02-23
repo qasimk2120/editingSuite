@@ -11,5 +11,10 @@ import {MatButtonModule} from '@angular/material/button';
 })
 export class HeaderComponent {
   title =  signal('Editing Suite');
-  logo_path = 'assets/favicon.ico'
+  menuOpen: boolean = false;
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
+  
 }
